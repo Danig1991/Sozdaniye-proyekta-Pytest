@@ -20,3 +20,12 @@ def set_up_module():
     yield
     print("Выход из системы(операция, "
           "выполненная после завершения тестов)")
+
+
+# выполнение для каждой функции в тесте order_test
+# (для ДЗ: Задача очередности запуска методов с помощью PyTest)
+@pytest.fixture(scope="function")
+def set_up_order():
+    print("Начало")
+    yield
+    print("Конец")
