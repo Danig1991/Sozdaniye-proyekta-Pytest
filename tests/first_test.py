@@ -1,11 +1,9 @@
-# 2 псевдотеста на отправку писем без использования фикстуры
+# 2 псевдотеста на отправку писем
 
 
-def test_sending_mail_1():
-    print("Первое письмо, отправленное из first_test, "
-          "без использования фикстуры")
+def test_sending_mail_1(set_up_module):
+    print("Первое письмо, отправленное из first_test")
 
 
-def test_sending_mail_2():
-    print("Второе письмо, отправленное из first_test, "
-          "без использования фикстуры")
+def test_sending_mail_2(set_up_module):
+    print("Второе письмо, отправленное из first_test")
